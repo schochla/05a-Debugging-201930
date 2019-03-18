@@ -12,7 +12,7 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 
 ###############################################################################
 #
-# TODO: 2. READ these instructions, ASKING QUESTIONS as needed.
+# DONE: 2. READ these instructions, ASKING QUESTIONS as needed.
 #
 #   This module contains "broken" functions, as in m1 and m2.
 #   FOLLOW THE SAME STEPS as in the instructions of m1.py
@@ -43,7 +43,6 @@ Authors: David Mutchler, Vibha Alangar, Matt Boutell, Dave Fisher,
 def main():
     """ Calls the   TEST   functions in this module. """
 
-
 ###############################################################################
 # Students:
 #   Do NOT touch the following  is_prime  function - it has no _TODO_.
@@ -69,7 +68,7 @@ def is_prime(n):
         if n % k == 0:
             return False
 
-    else: return True
+    return True
 
 
 ###############################################################################
@@ -122,7 +121,7 @@ def broken_1(m):
     #    **  For full credit you must appropriately
     #    **  use (call) the   is_prime   function that is DEFINED ABOVE.
     count = 0
-    for k in range(2 * m+1):
+    for k in range(2 * (m + 1)):
         if is_prime(m):
             count = count + 1
 
